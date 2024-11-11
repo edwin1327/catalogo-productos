@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+        <nav>
+            <button onclick="filterCategory('all')">Todos</button>
+            <button onclick="filterCategory('joyeria')">Joyería</button>
+            <button onclick="filterCategory('accesorios')">Accesorios</button>
+            <button onclick="filterCategory('salud')">Salud y Belleza</button>
+            <button onclick="filterCategory('tecnologia')">Tecnología</button>
+            <button onclick="filterCategory('vehiculos')">Carros y motos</button>
+            <button onclick="filterCategory('coleccionables')">Coleccionables</button>
+            <a href="adultos.html">Catalogo Adultos +18</a>
+        </nav>
+    </header>
+    <main id="product-container">
+        <!-- Los productos se cargarán aquí mediante JavaScript -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
