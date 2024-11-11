@@ -28,17 +28,12 @@ const products = [
     {name: 'Reloj dama de flores - Blanco', reference: 'P-0027', image: 'img/img023.png', quantity: 6, price: 30000, category: 'accesorios'},
     {name: 'Moneda conmemorativa Bitcoin - Plateada', reference: 'P-0028', image: 'img/img024.png', quantity: 7, price: 15000, category: 'coleccionables'},
     {name: 'Guante Masajeador balines acero', reference: 'P-0029', image: 'img/img025.png', quantity: 3, price: 15000, category: 'salud'},
-            
+    {name: 'Reloj Skmei para hombre Digital', reference: 'P-0032', image: 'img/img028.png', quantity: 2, price: 35000, category: 'accesorios'},
+                
     // Agrega aquí los demás productos con sus respectivas categorías (joyeria, accesorios, ropa, etc.)
 ];
-const productsParejas = [
-    {name: 'Satisfyer Endless Joy', reference: 'P-0030', image: 'img/img026.png', quantity: 2, price: 120000, category: 'juguetes'},
-    {name: 'Satisfyer Double Classic', reference: 'P-0031', image: 'img/img027.png', quantity: 2, price: 120000, category: 'juguetes'},
-
-]
 
 const productContainer = document.getElementById("product-container");
-const productParejasContainer = document.getElementById("product-parejas-container");
 
 function displayProducts(filteredProducts) {
     productContainer.innerHTML = "";
@@ -65,31 +60,5 @@ function filterCategory(category) {
     }
 }
 
-function displayProductsParejas(filteredProducts) {
-    productParejasContainer.innerHTML = "";
-    filteredProducts.forEach(product => {
-        const productCard = document.createElement("div");
-        productCard.className = "product-card";
-        productCard.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>Referencia: ${product.reference}</p>
-            <p>Disponible: ${product.quantity}</p>
-            <p class="price">$${product.price.toLocaleString()}</p>
-        `;
-        productContainer.appendChild(productCard);
-    });
-}
-
-function filterCategoryParejas(category) {
-    if (category === "all") {
-        displayProducts(productsParejas);
-    } else {
-        const filteredProducts = productsParejas.filter(product => product.category === category);
-        displayProducts(filteredProducts);
-    }
-}
-
 // Cargar todos los productos al inicio
 displayProducts(products);
-displayProductsParejas(productsParejas);
