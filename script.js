@@ -25,7 +25,7 @@ const products = [
     {name: 'Pelicula Antilluvia para ventana (20x17 cm)', reference: 'P-0024', image: 'img/img021.png', quantity: 5, price: 20000, category: 'vehiculos'},
     {name: 'Pelicula Antilluvia para casco', reference: 'P-0025', image: 'img/img022.png', quantity: 4, price: 20000, category: 'vehiculos'},
     {name: 'Pelicula Empañante para casco', reference: 'P-0026', image: 'img/img022.png', quantity: 5, price: 20000, category: 'vehiculos'},
-    {name: 'Reloj dama de flores - Blanco', reference: 'P-0027', image: 'img/img023.png', quantity: 6, price: 30000, category: 'accesorios'},
+    {name: 'Reloj dama de flores - Blanco', reference: 'P-0027', image: 'img/img023.png', quantity: 5, price: 30000, category: 'accesorios'},
     {name: 'Moneda conmemorativa Bitcoin - Plateada', reference: 'P-0028', image: 'img/img024.png', quantity: 7, price: 15000, category: 'coleccionables'},
     {name: 'Guante Masajeador balines acero', reference: 'P-0029', image: 'img/img025.png', quantity: 3, price: 15000, category: 'salud'},
     {name: 'Reloj Skmei para hombre Digital', reference: 'P-0032', image: 'img/img028.png', quantity: 2, price: 35000, category: 'accesorios'},
